@@ -3,10 +3,10 @@
 Trong bài viết về "xử lý và tổng hợp dữ liệu trên R với gói dplyr" chúng ta đã cùng nhau đi qua các hàm xử lý dữ liệu từ gói dplyr và R base. Trong bài viết này, chúng ta sẽ tiếp tục đi qua các hàm về tổng hợp dữ liệu chuyên sâu hơn thông qua 2 gói tidyr và reshape2, đồng thời so sánh với các hàm trong R base để bạn đọc có sự so sánh về các hàm được sử dụng đồng thời có sự lựa chọn, cách thức trong việc xử lý và tổng hợp dữ liệu. Trong bài viết về gói dplyr, chúng ta đã cùng nhau đi qua khái niệm pipe operator, bài viết này chúng ta sẽ sử dụng lại kết quả đó. Nếu bạn đọc muốn tìm hiểu thêm về pipe operator thì có thể tìm đọc lại bài viết về dplyr để hiểu hơn.
 
 Trước khi bắt đầu vào tìm hiểu các hàm trong 2 gói này, chúng ta hãy cài đặt và gọi 2 gói lên môi trường R.
-
+```r
 #install.packages(c("tidyr", "reshape2"), dependencies = T)
 sapply(c("tidyr", "reshape2", "magrittr"), require, character.only = T)
-
+```
 
 # Các tình huống tổng hợp và xử lý dữ liệu
 
